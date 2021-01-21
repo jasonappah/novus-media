@@ -7,7 +7,7 @@ import {
 	Button,
 	Flex,
 	Heading,
-	Image
+	Image,
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 export default function Home() {
@@ -28,9 +28,17 @@ function Footer() {
 		<Box bg="purple.900" p={8}>
 			<SimpleGrid columns={{ sm: 1, md: 3, lg: 6 }} spacing={10}>
 				<Box color="purple.50" p={2}>
-					<Image p={4} boxSize="xxs" fit="contain" align="left top" src="/logo-transparent-no-text.png"/>
+					<Image
+						p={4}
+						boxSize="xxs"
+						fit="contain"
+						align="left top"
+						src="/logo-transparent-no-text.png"
+					/>
 					<Heading size="lg">Novus Media</Heading>
-					<Text as="i">Your one stop shop for all your digital marketing needs.</Text>
+					<Text as="i">
+						Your one stop shop for all your digital marketing needs.
+					</Text>
 				</Box>
 				<FooterCol
 					title="Company"
@@ -52,7 +60,7 @@ function Footer() {
 					]}
 				/>
 
-<FooterCol
+				<FooterCol
 					title="Why Novus"
 					links={[
 						{ title: 'Compare Novus to Glide Design' },
@@ -60,7 +68,7 @@ function Footer() {
 						{ title: 'Compare Novus to Workhorse Marketing' },
 					]}
 				/>
-		
+
 				<FooterCol
 					title="Follow Us"
 					links={[
@@ -112,15 +120,13 @@ function FooterCol(props) {
 			<Heading p={padding} size="md">
 				{title}
 			</Heading>
-			{links.map((link) => {
-				return link.url ? (
+			{links.map((link) => link.url ? (
 					<Link href={link.url}>
 						<FooterItem padding={padding} text={link.title} />{' '}
 					</Link>
 				) : (
 					<FooterItem padding={padding} text={link.title} />
-				)
-			})}
+				))}
 		</Box>
 	)
 }

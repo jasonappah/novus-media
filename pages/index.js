@@ -1,5 +1,14 @@
 import Head from 'next/head'
-import { Text, Box, Link, SimpleGrid, Button, Flex } from '@chakra-ui/react'
+import {
+	Text,
+	Box,
+	Link,
+	SimpleGrid,
+	Button,
+	Flex,
+	Heading,
+	Image
+} from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 export default function Home() {
 	return (
@@ -17,11 +26,50 @@ export default function Home() {
 function Footer() {
 	return (
 		<Box bg="purple.900" p={8}>
-			<SimpleGrid columns={4} spacing={10}>
-				<Box bg="purple.100" p={4} height="80px">Footer Submenu</Box>
-				<Box bg="purple.100" p={4} height="80px">Footer Submenu</Box>
-				<Box bg="purple.100" p={4} height="80px">Footer Submenu</Box>
-				<Box bg="purple.100" p={4} height="80px">Footer Submenu</Box>
+			<SimpleGrid columns={{ sm: 1, md: 3, lg: 6 }} spacing={10}>
+				<Box color="purple.50" p={2}>
+					<Image p={4} boxSize="xxs" fit="contain" align="left top" src="/logo-transparent-no-text.png"/>
+					<Heading size="lg">Novus Media</Heading>
+					<Text as="i">Your one stop shop for all your digital marketing needs.</Text>
+				</Box>
+				<FooterCol
+					title="Company"
+					links={[
+						{ title: 'Blog', url: '/blog' },
+						{ title: 'Team' },
+						{ title: 'Finances' },
+						{ title: 'About' },
+					]}
+				/>
+				<FooterCol
+					title="Services"
+					links={[
+						{ title: 'Videography' },
+						{ title: 'Photography' },
+						{ title: 'Social Media Marketing' },
+						{ title: 'Web Development' },
+						{ title: 'Pricing' },
+					]}
+				/>
+
+<FooterCol
+					title="Why Novus"
+					links={[
+						{ title: 'Compare Novus to Glide Design' },
+						{ title: 'Compare Novus to Rock Candy Media' },
+						{ title: 'Compare Novus to Workhorse Marketing' },
+					]}
+				/>
+		
+				<FooterCol
+					title="Follow Us"
+					links={[
+						{ title: 'Twitter' },
+						{ title: 'Facebook' },
+						{ title: 'Instagram' },
+						{ title: 'Blog', url: '/blog' },
+					]}
+				/>
 			</SimpleGrid>
 			<Box w="100%" p={4}>
 				<Text fontSize="xs" color="purple.100">
@@ -41,13 +89,43 @@ function Footer() {
 
 function CallToAction() {
 	return (
-		<Flex align="center" direction="column" bg="purple.100" w="100%" p={12} color="purple.800">
-				<Text fontSize="5xl">
-					Upgrade your web presence.
-				</Text>
-				<Button m={4} colorScheme="white" variant="outline">
-					Get in touch
-				</Button>
+		<Flex
+			align="center"
+			direction="column"
+			bg="purple.100"
+			w="100%"
+			p={6}
+			color="purple.800">
+			<Text fontSize="4xl">Upgrade your web presence.</Text>
+			<Button m={4} colorScheme="white" variant="outline">
+				Get in touch
+			</Button>
 		</Flex>
 	)
-	}
+}
+
+function FooterCol(props) {
+	const padding = 2
+	const { links, title } = props
+	return (
+		<Box p={4} color="purple.50">
+			<Heading p={padding} size="md">
+				{title}
+			</Heading>
+			{links.map((link) => {
+				return link.url ? (
+					<Link href={link.url}>
+						<FooterItem padding={padding} text={link.title} />{' '}
+					</Link>
+				) : (
+					<FooterItem padding={padding} text={link.title} />
+				)
+			})}
+		</Box>
+	)
+}
+
+function FooterItem(props) {
+	const { padding, text } = props
+	return <Text p={padding}>{text}</Text>
+}

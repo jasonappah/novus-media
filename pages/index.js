@@ -28,7 +28,7 @@ export default function Home() {
 function Footer() {
 	return (
 		<Box bg="purple.900" p={8}>
-			<SimpleGrid columns={{ sm: 1, md: 3, lg: 6 }} spacing={10}>
+			<SimpleGrid columns={{ sm: 1, md: 3, lg: 5 }} spacing={10}>
 				<Box color="purple.50" p={2}>
 					<Image
 						p={4}
@@ -119,7 +119,7 @@ function FooterCol(props) {
 	const { links, title } = props
 	return (
 		<Box p={4} color="purple.50">
-			<Heading p={padding} size="md"  fontFamily="Klima">
+			<Heading p={padding} size="md" fontFamily="Klima">
 				{title}
 			</Heading>
 			{links.map((link) =>
@@ -137,7 +137,11 @@ function FooterCol(props) {
 
 function FooterItem(props) {
 	const { padding, text } = props
-	return <Text fontWeight="500" p={padding}>{text}</Text>
+	return (
+		<Text fontWeight="500" p={padding}>
+			{text}
+		</Text>
+	)
 }
 
 function Jumbotron() {

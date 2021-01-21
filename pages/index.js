@@ -119,7 +119,7 @@ function FooterCol(props) {
 	const { links, title } = props
 	return (
 		<Box p={4} color="purple.50">
-			<Heading p={padding} size="md">
+			<Heading p={padding} size="md"  fontFamily="Klima">
 				{title}
 			</Heading>
 			{links.map((link) =>
@@ -137,7 +137,7 @@ function FooterCol(props) {
 
 function FooterItem(props) {
 	const { padding, text } = props
-	return <Text p={padding}>{text}</Text>
+	return <Text fontWeight="500" p={padding}>{text}</Text>
 }
 
 function Jumbotron() {

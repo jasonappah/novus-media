@@ -7,6 +7,7 @@ import {
 	Button,
 	Flex,
 	Heading,
+	Container,
 	Image,
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -17,6 +18,7 @@ export default function Home() {
 				<title>Novus Media</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+			<Jumbotron />
 			<CallToAction />
 			<Footer />
 		</div>
@@ -120,13 +122,15 @@ function FooterCol(props) {
 			<Heading p={padding} size="md">
 				{title}
 			</Heading>
-			{links.map((link) => link.url ? (
-					<Link href={link.url}>
+			{links.map((link) =>
+				link.url ? (
+					<Link key={link.title} href={link.url}>
 						<FooterItem padding={padding} text={link.title} />{' '}
 					</Link>
 				) : (
-					<FooterItem padding={padding} text={link.title} />
-				))}
+					<FooterItem key={link.title} padding={padding} text={link.title} />
+				)
+			)}
 		</Box>
 	)
 }
@@ -134,4 +138,17 @@ function FooterCol(props) {
 function FooterItem(props) {
 	const { padding, text } = props
 	return <Text p={padding}>{text}</Text>
+}
+
+function Jumbotron() {
+	return (
+		<Flex
+			boxSize="xl"
+			width="100%"
+			direction="column"
+			justify="center"
+			align="center">
+			<Heading size="4xl">Your social media sucks.</Heading>
+		</Flex>
+	)
 }

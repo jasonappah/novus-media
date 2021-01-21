@@ -1,0 +1,402 @@
+/* generated with https://transfonter.org/ */
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-BoldItalic.eot');
+    src: local('Klima Bold Italic'), local('Klima-BoldItalic'),
+        url('/fonts/Klima-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-BoldItalic.woff2') format('woff2'),
+        url('/fonts/Klima-BoldItalic.woff') format('woff'),
+        url('/fonts/Klima-BoldItalic.ttf') format('truetype'),
+        url('/fonts/Klima-BoldItalic.svg#Klima-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/klimabold_italic.eot');
+    src: url('/fonts/klimabold_italic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/klimabold_italic.woff2') format('woff2'),
+        url('/fonts/klimabold_italic.woff') format('woff'),
+        url('/fonts/klimabold_italic.ttf') format('truetype'),
+        url('/fonts/klimabold_italic.svg#klimabold_/italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-Bold.eot');
+    src: local('KlimaBold'), local('Klima-Bold'),
+        url('/fonts/Klima-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-Bold.woff2') format('woff2'),
+        url('/fonts/Klima-Bold.woff') format('woff'),
+        url('/fonts/Klima-Bold.ttf') format('truetype'),
+        url('/fonts/Klima-Bold.svg#Klima-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-Bold_1.eot');
+    src: local('Klima Bold'), local('Klima-Bold'),
+        url('/fonts/Klima-Bold_1.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-Bold_1.woff2') format('woff2'),
+        url('/fonts/Klima-Bold_1.woff') format('woff'),
+        url('/fonts/Klima-Bold_1.ttf') format('truetype'),
+        url('/fonts/Klima-Bold_1.svg#Klima-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-Bold_2.eot');
+    src: local('Klima Bold'), local('Klima-Bold'),
+        url('/fonts/Klima-Bold_2.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-Bold_2.woff2') format('woff2'),
+        url('/fonts/Klima-Bold_2.woff') format('woff'),
+        url('/fonts/Klima-Bold_2.ttf') format('truetype'),
+        url('/fonts/Klima-Bold_2.svg#Klima-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-Bold_3.eot');
+    src: local('Klima Bold'), local('Klima-Bold'),
+        url('/fonts/Klima-Bold_3.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-Bold_3.woff2') format('woff2'),
+        url('/fonts/Klima-Bold_3.woff') format('woff'),
+        url('/fonts/Klima-Bold_3.ttf') format('truetype'),
+        url('/fonts/Klima-Bold_3.svg#Klima-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-BoldItalic_1.eot');
+    src: local('Klima Bold Italic'), local('Klima-BoldItalic'),
+        url('/fonts/Klima-BoldItalic_1.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-BoldItalic_1.woff2') format('woff2'),
+        url('/fonts/Klima-BoldItalic_1.woff') format('woff'),
+        url('/fonts/Klima-BoldItalic_1.ttf') format('truetype'),
+        url('/fonts/Klima-BoldItalic_1.svg#Klima-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-BoldItalic_2.eot');
+    src: local('KlimaBoldItalic'), local('Klima-BoldItalic'),
+        url('/fonts/Klima-BoldItalic_2.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-BoldItalic_2.woff2') format('woff2'),
+        url('/fonts/Klima-BoldItalic_2.woff') format('woff'),
+        url('/fonts/Klima-BoldItalic_2.ttf') format('truetype'),
+        url('/fonts/Klima-BoldItalic_2.svg#Klima-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/klimabold.eot');
+    src: url('/fonts/klimabold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/klimabold.woff2') format('woff2'),
+        url('/fonts/klimabold.woff') format('woff'),
+        url('/fonts/klimabold.ttf') format('truetype'),
+        url('/fonts/klimabold.svg#klimabold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-BoldItalic_3.eot');
+    src: local('Klima Bold Italic'), local('Klima-BoldItalic'),
+        url('/fonts/Klima-BoldItalic_3.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-BoldItalic_3.woff2') format('woff2'),
+        url('/fonts/Klima-BoldItalic_3.woff') format('woff'),
+        url('/fonts/Klima-BoldItalic_3.ttf') format('truetype'),
+        url('/fonts/Klima-BoldItalic_3.svg#Klima-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/klimaregular_italic.eot');
+    src: url('/fonts/klimaregular_italic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/klimaregular_italic.woff2') format('woff2'),
+        url('/fonts/klimaregular_italic.woff') format('woff'),
+        url('/fonts/klimaregular_italic.ttf') format('truetype'),
+        url('/fonts/klimaregular_italic.svg#klimaregular_/italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-Regular.eot');
+    src: local('Klima'), local('Klima-Regular'),
+        url('/fonts/Klima-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-Regular.woff2') format('woff2'),
+        url('/fonts/Klima-Regular.woff') format('woff'),
+        url('/fonts/Klima-Regular.ttf') format('truetype'),
+        url('/fonts/Klima-Regular.svg#Klima-Regular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-RegularItalic.eot');
+    src: local('Klima Regular Italic'), local('Klima-RegularItalic'),
+        url('/fonts/Klima-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-RegularItalic.woff2') format('woff2'),
+        url('/fonts/Klima-RegularItalic.woff') format('woff'),
+        url('/fonts/Klima-RegularItalic.ttf') format('truetype'),
+        url('/fonts/Klima-RegularItalic.svg#Klima-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-Regular_1.eot');
+    src: local('Klima'), local('Klima-Regular'),
+        url('/fonts/Klima-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-Regular_1.woff2') format('woff2'),
+        url('/fonts/Klima-Regular_1.woff') format('woff'),
+        url('/fonts/Klima-Regular_1.ttf') format('truetype'),
+        url('/fonts/Klima-Regular_1.svg#Klima-Regular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/klimaregular.eot');
+    src: url('/fonts/klimaregular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/klimaregular.woff2') format('woff2'),
+        url('/fonts/klimaregular.woff') format('woff'),
+        url('/fonts/klimaregular.ttf') format('truetype'),
+        url('/fonts/klimaregular.svg#klimaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-Regular_2.eot');
+    src: local('Klima'), local('Klima-Regular'),
+        url('/fonts/Klima-Regular_2.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-Regular_2.woff2') format('woff2'),
+        url('/fonts/Klima-Regular_2.woff') format('woff'),
+        url('/fonts/Klima-Regular_2.ttf') format('truetype'),
+        url('/fonts/Klima-Regular_2.svg#Klima-Regular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-Regular_3.eot');
+    src: local('KlimaRegular'), local('Klima-Regular'),
+        url('/fonts/Klima-Regular_3.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-Regular_3.woff2') format('woff2'),
+        url('/fonts/Klima-Regular_3.woff') format('woff'),
+        url('/fonts/Klima-Regular_3.ttf') format('truetype'),
+        url('/fonts/Klima-Regular_3.svg#Klima-Regular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-RegularItalic_1.eot');
+    src: local('Klima Regular Italic Italic'), local('Klima-RegularItalic'),
+        url('/fonts/Klima-RegularItalic_1.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-RegularItalic_1.woff2') format('woff2'),
+        url('/fonts/Klima-RegularItalic_1.woff') format('woff'),
+        url('/fonts/Klima-RegularItalic_1.ttf') format('truetype'),
+        url('/fonts/Klima-RegularItalic_1.svg#Klima-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-RegularItalic_2.eot');
+    src: local('Klima Regular Italic Italic'), local('Klima-RegularItalic'),
+        url('/fonts/Klima-RegularItalic_2.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-RegularItalic_2.woff2') format('woff2'),
+        url('/fonts/Klima-RegularItalic_2.woff') format('woff'),
+        url('/fonts/Klima-RegularItalic_2.ttf') format('truetype'),
+        url('/fonts/Klima-RegularItalic_2.svg#Klima-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-Light.eot');
+    src: local('Klima Light'), local('Klima-Light'),
+        url('/fonts/Klima-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-Light.woff2') format('woff2'),
+        url('/fonts/Klima-Light.woff') format('woff'),
+        url('/fonts/Klima-Light.ttf') format('truetype'),
+        url('/fonts/Klima-Light.svg#Klima-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-Light_1.eot');
+    src: local('Klima Light'), local('Klima-Light'),
+        url('/fonts/Klima-Light_1.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-Light_1.woff2') format('woff2'),
+        url('/fonts/Klima-Light_1.woff') format('woff'),
+        url('/fonts/Klima-Light_1.ttf') format('truetype'),
+        url('/fonts/Klima-Light_1.svg#Klima-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-Light_2.eot');
+    src: local('Klima Light'), local('Klima-Light'),
+        url('/fonts/Klima-Light_2.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-Light_2.woff2') format('woff2'),
+        url('/fonts/Klima-Light_2.woff') format('woff'),
+        url('/fonts/Klima-Light_2.ttf') format('truetype'),
+        url('/fonts/Klima-Light_2.svg#Klima-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-Light_3.eot');
+    src: local('KlimaLight'), local('Klima-Light'),
+        url('/fonts/Klima-Light_3.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-Light_3.woff2') format('woff2'),
+        url('/fonts/Klima-Light_3.woff') format('woff'),
+        url('/fonts/Klima-Light_3.ttf') format('truetype'),
+        url('/fonts/Klima-Light_3.svg#Klima-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/klimaregular_1.eot');
+    src: url('/fonts/klimaregular_1.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/klimaregular_1.woff2') format('woff2'),
+        url('/fonts/klimaregular_1.woff') format('woff'),
+        url('/fonts/klimaregular_1.ttf') format('truetype'),
+        url('/fonts/klimaregular_1.svg#klimaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-LightItalic.eot');
+    src: local('KlimaLightItalic'), local('Klima-LightItalic'),
+        url('/fonts/Klima-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-LightItalic.woff2') format('woff2'),
+        url('/fonts/Klima-LightItalic.woff') format('woff'),
+        url('/fonts/Klima-LightItalic.ttf') format('truetype'),
+        url('/fonts/Klima-LightItalic.svg#Klima-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-LightItalic_1.eot');
+    src: local('Klima Light Italic'), local('Klima-LightItalic'),
+        url('/fonts/Klima-LightItalic_1.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-LightItalic_1.woff2') format('woff2'),
+        url('/fonts/Klima-LightItalic_1.woff') format('woff'),
+        url('/fonts/Klima-LightItalic_1.ttf') format('truetype'),
+        url('/fonts/Klima-LightItalic_1.svg#Klima-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-LightItalic_2.eot');
+    src: local('Klima Light Italic'), local('Klima-LightItalic'),
+        url('/fonts/Klima-LightItalic_2.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-LightItalic_2.woff2') format('woff2'),
+        url('/fonts/Klima-LightItalic_2.woff') format('woff'),
+        url('/fonts/Klima-LightItalic_2.ttf') format('truetype'),
+        url('/fonts/Klima-LightItalic_2.svg#Klima-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/klimalight_italic.eot');
+    src: url('/fonts/klimalight_italic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/klimalight_italic.woff2') format('woff2'),
+        url('/fonts/klimalight_italic.woff') format('woff'),
+        url('/fonts/klimalight_italic.ttf') format('truetype'),
+        url('/fonts/klimalight_italic.svg#klimalight_/italic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klima';
+    src: url('/fonts/Klima-LightItalic_3.eot');
+    src: local('Klima Light Italic'), local('Klima-LightItalic'),
+        url('/fonts/Klima-LightItalic_3.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Klima-LightItalic_3.woff2') format('woff2'),
+        url('/fonts/Klima-LightItalic_3.woff') format('woff'),
+        url('/fonts/Klima-LightItalic_3.ttf') format('truetype'),
+        url('/fonts/Klima-LightItalic_3.svg#Klima-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+

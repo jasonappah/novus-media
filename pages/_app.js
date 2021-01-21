@@ -1,10 +1,25 @@
-import { ChakraProvider } from '@chakra-ui/react'
+import '../styles.css'
 
-export default App
+import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+
+const theme = extendTheme({
+	styles: {
+	  global: {
+		body: {
+		  fontFamily: "Klima"
+		},
+	  },
+	},
+  })
+  
+
+
 function App({ Component, pageProps }) {
 	return (
-		<ChakraProvider>
+		<ChakraProvider theme={theme}>
 			<Component {...pageProps} />
 		</ChakraProvider>
 	)
 }
+
+export default App

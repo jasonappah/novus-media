@@ -20,8 +20,12 @@
 		"@emotion/styled": "^11.0.0",
 		"framer-motion": "^3.2.1",
 		"next": "10.0.0",
+		"nextjs-morph-page": "^2.0.3",
 		"react": "17.0.1",
-		"react-dom": "17.0.1"
+		"react-dom": "17.0.1",
+		"react-icons": "^4.1.0",
+		"remark": "^13.0.0",
+		"remark-html": "^13.0.1"
 	},
 	"devDependencies": {
 		"@types/node": "^14.14.6",

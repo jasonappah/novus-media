@@ -1,7 +1,18 @@
-import { Text, Box, Link, SimpleGrid, Heading, Image } from '@chakra-ui/react'
+import {
+	Text,
+	Box,
+	Link as ChakraLink,
+	SimpleGrid,
+	Heading,
+	Image,
+	useToast,
+} from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
+import NoPage from './NoPage'
+import Link from 'next/link'
 
 function Footer() {
+	const toast = useToast()
 	return (
 		<Box bg="purple.900" p={8}>
 			<SimpleGrid columns={{ sm: 1, md: 3, lg: 5 }} spacing={10}>
@@ -19,8 +30,10 @@ function Footer() {
 					</Text>
 				</Box>
 				<FooterCol
+					toast={toast}
 					title="Company"
 					links={[
+						{ title: 'Home', url: '/' },
 						{ title: 'Blog', url: '/blog' },
 						{ title: 'Team' },
 						{ title: 'Finances' },
@@ -28,6 +41,7 @@ function Footer() {
 					]}
 				/>
 				<FooterCol
+					toast={toast}
 					title="Services"
 					links={[
 						{ title: 'Videography' },
@@ -39,6 +53,7 @@ function Footer() {
 				/>
 
 				<FooterCol
+					toast={toast}
 					title="Why Novus"
 					links={[
 						{ title: 'Compare Novus to Glide Design' },
@@ -48,6 +63,7 @@ function Footer() {
 				/>
 
 				<FooterCol
+					toast={toast}
 					title="Follow Us"
 					links={[
 						{ title: 'Twitter' },
@@ -65,17 +81,19 @@ function Footer() {
 function Byline() {
 	return (
 		<Box w="100%" p={4}>
-			<Text fontSize="xs" color="purple.100">This site is custom-built with React.js and Chakra UI. Like our work? Get in touch!</Text>
+			<Text fontSize="xs" color="purple.100">
+				This site is custom-built with React.js and Chakra UI. Like our work?
+				Get in touch!
+			</Text>
 			<Text fontSize="xs" color="purple.100">
 				Copyright © {new Date().getFullYear()}{' '}
-				<Link href="https://jasonaa.me" isExternal>
+				<ChakraLink href="https://jasonaa.me" isExternal>
 					Jason Antwi-Appah <ExternalLinkIcon mx="2px" />
-				</Link>{' '}
+				</ChakraLink>{' '}
 				|{' '}
-				<Link href="https://jasonaa.me/g/novus-media" isExternal>
+				<ChakraLink href="https://jasonaa.me/g/novus-media" isExternal>
 					View source on GitHub <ExternalLinkIcon mx="2px" />.
-				</Link>
-	
+				</ChakraLink>
 			</Text>
 		</Box>
 	)
@@ -83,7 +101,7 @@ function Byline() {
 
 function FooterCol(props) {
 	const padding = 2
-	const { links, title } = props
+	const { links, title, toast } = props
 	return (
 		<Box p={4} color="purple.50">
 			<Heading p={padding} size="md" fontFamily="Klima">
@@ -92,10 +110,17 @@ function FooterCol(props) {
 			{links.map((link) =>
 				link.url ? (
 					<Link key={link.title} href={link.url}>
+					<ChakraLink>
 						<FooterItem padding={padding} text={link.title} />{' '}
+					</ChakraLink>
 					</Link>
 				) : (
-					<FooterItem key={link.title} padding={padding} text={link.title} />
+					<FooterItem
+						onClick={() => NoPage(toast)}
+						key={link.title}
+						padding={padding}
+						text={link.title}
+					/>
 				)
 			)}
 		</Box>
@@ -104,8 +129,9 @@ function FooterCol(props) {
 
 function FooterItem(props) {
 	const { padding, text } = props
+	const { onClick } = props
 	return (
-		<Text fontWeight="500" p={padding}>
+		<Text onClick={onClick} fontWeight="500" p={padding}>
 			{text}
 		</Text>
 	)

@@ -10,8 +10,8 @@ export default function Home() {
 		<div>
 			<MenuBar />
 			<Jumbotron />
-			<Testimonial />
 			<Services />
+			<Testimonial />
 			<CallToAction />
 			<Footer />
 		</div>

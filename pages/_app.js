@@ -1,6 +1,7 @@
 import '../styles.css'
 import Head from 'next/head'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import MorphTransition from 'nextjs-morph-page'
 
 const theme = extendTheme({
 	styles: {
@@ -15,11 +16,15 @@ const theme = extendTheme({
 function App({ Component, pageProps }) {
 	return (
 		<>
-		<Head><title>Novus Media</title></Head>
+			<Head>
+				<title>Novus Media</title>
+			</Head>
 
-		<ChakraProvider theme={theme}>
-			<Component {...pageProps} />
-		</ChakraProvider>
+			<MorphTransition timeout={300} classNames="morph">
+				<ChakraProvider theme={theme}>
+					<Component {...pageProps} />
+				</ChakraProvider>
+			</MorphTransition>
 		</>
 	)
 }

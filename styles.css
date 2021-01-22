@@ -1,3 +1,20 @@
+/* yeeted from https://github.com/Irrelon/nextjs-morph-page */
+
+.morph.enter {
+	opacity: 0;
+  }
+  .morph.enter.active {
+	opacity: 1;
+	transition: opacity 300ms;
+  }
+  .morph.exit {
+	opacity: 1;
+  }
+  .morph.exit.active {
+	opacity: 0;
+	transition: opacity 300ms;
+  }
+
 /* generated with https://transfonter.org/ */
 
 @font-face {

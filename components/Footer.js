@@ -65,6 +65,7 @@ function Footer() {
 function Byline() {
 	return (
 		<Box w="100%" p={4}>
+			<Text fontSize="xs" color="purple.100">This site is custom-built with React.js and Chakra UI. Like our work? Get in touch!</Text>
 			<Text fontSize="xs" color="purple.100">
 				Copyright © {new Date().getFullYear()}{' '}
 				<Link href="https://jasonaa.me" isExternal>
@@ -72,8 +73,9 @@ function Byline() {
 				</Link>{' '}
 				|{' '}
 				<Link href="https://jasonaa.me/g/novus-media" isExternal>
-					View source on GitHub <ExternalLinkIcon mx="2px" />
+					View source on GitHub <ExternalLinkIcon mx="2px" />.
 				</Link>
+	
 			</Text>
 		</Box>
 	)
